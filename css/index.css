@@ -1,3 +1,280 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+p {
+	margin-bottom: 1%;
+}
+
+h1{
+	font-size: 250%;
+}
+
+nav{
+	display: flex;
+	justify-content: center;
+	margin-top: 2%;
+}
+
+@keyframes sparkle {
+	from{background-color: #FF1493;}
+	to{background-color: #1E90FF;}
+  }
+
+nav a{
+	text-align: center;
+	color: grey;
+	text-decoration: none;
+	margin-left: 2%;
+	margin-top: 0.5%;
+}
+
+nav a:hover{
+	color: lightgreen;
+	animation-name: sparkle;
+	animation-duration: 2s;
+	background-color: #1E90FF;
+}
+
+nav img{
+	margin-left: 2%;
+}
+
+header{
+	margin-top: 2%;
+	display: flex;	
+	justify-content: center;
+}
+
+header div{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+header .getStarted {
+	text-decoration: none;
+	color: black;
+	border-bottom: 2px solid grey;
+	border-left: 2px solid grey;
+	border-top: 2px solid lightgrey;
+	border-right: 2px solid lightgrey;
+} 
+
+header a:hover{
+	color: blue;
+}
+
+header div{
+	text-align: center;
+}
+
+.headImage{
+	margin-left: 2%;
+}
+
+.align{
+	/* display:flex;
+	flex-flow: wrap row; */
+	/* justify-content: center; */
+}
+
+.top-section{
+	margin-top: 2%;
+	display:flex;
+	justify-content: center;
+}
+
+
+.top-section div {
+	width: 20%;
+	border-top: 2px solid black;
+} 
+
+.middle-img{
+	margin-top: 2%;
+	display:flex;
+	justify-content: center;
+}
+
+.middle-img img{
+	width: 40%;
+}
+
+.middle-section{
+	margin-top: 2%;
+	display:flex;
+	justify-content: center;
+}
+	
+
+.middle-section div {
+	width: 13.5%;
+	border-bottom: 2px solid black;
+} 
+
+.contactDiv{
+	width: 67%;
+	display: flex;
+	justify-content: center;
+}
+
+.contact{
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 2%;
+	display:flex;
+	justify-content: flex-start;
+}
+
+
+
+footer{
+	text-align: center;
+}
+
+
+/* Begin code on Services.html */
+/* ---------------------------
+------------------------------- */
+/* Begin code on Services.html */
+
+
+.testDivTop{
+	display: flex;
+	justify-content: center;
+	/* flex-flow: column wrap; */
+}
+.serviceHeader{
+	width: 45%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+}
+
+.serviceHeader div{
+	border-bottom: 2px solid black;
+	width: 100%;
+	/* display: flex; */
+	/* justify-content: center; */
+}
+
+.serviceHeader img{
+	width: 100%;
+}
+
+.testDiv{
+	display: flex;
+	justify-content: center;
+}
+
+.serviceSection{
+	/* max-width:100%; */
+	margin-top: 2%;
+	width: 60%;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.serviceSection div{
+	border: 2px solid black;
+	padding: 2%;
+	background-color: lightgrey;
+	width:35%;
+	margin: 3%;
+	/* display:flex;
+	justify-content: center; */
+}
+
+.learnButton{
+	text-align: center;
+	padding: 1%;
+	border: 2px solid black;
+	border-radius: 15%;
+	background-color: white;
+	width: 40%;
+	margin-top: 5%;
+}
+
+.learnButton:hover{
+	color: blue;
+}
+
+.serviceLowerSection{
+	width: 50%;
+	margin-top: 2%;
+	display:flex;
+	justify-content: center;
+	border-top: 2px solid black;
+}
+
+.serviceLowerSection div{
+	padding: 2%;
+}
