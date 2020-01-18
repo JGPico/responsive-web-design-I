@@ -52,6 +52,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 html, body {
@@ -68,7 +69,8 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 p {
-	margin-bottom: 1%;
+    margin-bottom: 1%;
+    line-height: 1.4;
 }
 
 h1{
@@ -136,14 +138,10 @@ header div{
 }
 
 .headImage{
-	margin-left: 2%;
+    margin-left: 5%;
+    max-width: 100%;
 }
 
-.align{
-	/* display:flex;
-	flex-flow: wrap row; */
-	/* justify-content: center; */
-}
 
 .top-section{
 	margin-top: 2%;
@@ -192,8 +190,6 @@ header div{
 	justify-content: flex-start;
 }
 
-
-
 footer{
 	text-align: center;
 }
@@ -208,7 +204,6 @@ footer{
 .testDivTop{
 	display: flex;
 	justify-content: center;
-	/* flex-flow: column wrap; */
 }
 .serviceHeader{
 	width: 45%;
@@ -220,8 +215,6 @@ footer{
 .serviceHeader div{
 	border-bottom: 2px solid black;
 	width: 100%;
-	/* display: flex; */
-	/* justify-content: center; */
 }
 
 .serviceHeader img{
@@ -234,7 +227,6 @@ footer{
 }
 
 .serviceSection{
-	/* max-width:100%; */
 	margin-top: 2%;
 	width: 60%;
 	display:flex;
@@ -249,18 +241,23 @@ footer{
 	background-color: lightgrey;
 	width:35%;
 	margin: 3%;
-	/* display:flex;
-	justify-content: center; */
+}
+
+.serviceSection div p{
+    margin-bottom: 3%;
 }
 
 .learnButton{
+    text-decoration: none;
 	text-align: center;
 	padding: 1%;
 	border: 2px solid black;
 	border-radius: 15%;
 	background-color: white;
 	width: 40%;
-	margin-top: 5%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    line-height: 1.4;
 }
 
 .learnButton:hover{
@@ -278,3 +275,30 @@ footer{
 .serviceLowerSection div{
 	padding: 2%;
 }
+
+/* End code on Services.html */
+/* ---------------------------
+------------------------------- */
+/* End code on Services.html */
+
+
+
+ /* Media query 800px ----- */
+
+@media (max-width: 800px) {
+    .headImage{
+        display: none;
+    }
+}
+
+ /* Media query 800px ----- */
+
+ /* Media query 500px ----- */
+
+ @media(max-width: 500px) {
+    body{
+        background-color: coral;
+    }
+ }
+
+ /* Media query 500px ----- */
